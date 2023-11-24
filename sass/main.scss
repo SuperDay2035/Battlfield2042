@@ -1,0 +1,358 @@
+@font-face{
+
+    font-family: "bf-modernista-bold";
+    src: url("../bf-modernista-bold.ttf") format("truetype");
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: "bf-modernista-bold";
+}
+
+
+
+
+.header{
+   width: 100%;
+   background-color: rgb(0, 0, 0);
+   display: flex;
+   padding: 0.5rem 0;
+   
+   .nav{
+    width: 100%;
+   }
+
+   .ul{
+
+    padding: 1rem 0;
+    a{
+        font-family: sans-serif;
+        font-size: 1.4rem;
+        text-decoration: none;
+        margin-left: 12px;
+        color: white;
+        font-family: "bf-modernista-bold";
+       
+    }
+
+    a:hover{
+        color: #26FFDF;
+    }
+      } 
+
+    .btn{
+        
+        background-color: #26FFDF;
+        color: black;
+        border-radius: 0.5rem;
+        padding: 0 2rem;
+        font-size: 1rem;
+        display: block;
+        margin-top: 0.6rem;
+        margin-right: 1rem;
+    }
+
+
+
+}
+
+
+
+
+// home
+
+.home-container{
+ 
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-size: cover  ;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+
+    .homes{
+
+        display: flex;
+        justify-content: center;
+
+        img{
+            width: 100%;
+        }
+     
+        .main-text{
+            margin-top: 30%;
+            position: absolute;
+            top: 0;
+            text-align: center;       
+            h1{
+     
+                color: #26FFDF;
+                font-size: 5rem;
+            }
+            p{
+                font-size: 2.5rem;
+                color: #26FFDF;
+            }
+            .text{
+                font-size: 1.3rem;
+            }
+    
+        }
+    }
+
+  
+   
+    }
+
+
+/// tips tricks
+    .tips-container{
+
+        width: 100%;
+        background-color: black;
+        margin: 0 auto;
+        padding: 2rem;
+        position: relative;
+
+
+        .tipsabout{
+            display: flex;
+            justify-content: center;
+            padding: 2rem;
+            .logo{
+                img{
+                 width: 70px;
+                }
+            }
+    
+            .text{
+               display: flex;
+               align-items: center;
+                h1{
+                    color: white;
+                    font-size: 34px;
+                }
+    
+            }
+    
+        }
+    
+        .tricks{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            
+            img{
+                width: 100%;
+            }
+
+            .main-text{
+                margin-top: 8%;
+                left: 32px;
+                top: 0;
+
+                position: absolute;
+                
+                h1{
+                    font-size: 77px;
+                    color: white;
+                }
+
+                p{
+                    font-size: 20px;
+                    color: white;
+                }
+
+                .btn{
+                    color: black;
+                    padding: 12px;
+                    font-size: 30px;
+                    background-color: #ffffff;
+                    border-radius: 4px;
+                }
+            }
+
+        }
+    
+    }
+    
+
+
+
+// Media Query
+
+
+@media(max-width: 1024px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .tips-container .tipsabout {
+         
+        .text{
+            h1{
+                font-size: 20px;
+            }
+        }
+     
+        .logo{
+            img{
+                width: 25px;
+            }
+        }
+    };
+    .tips-container .tricks .main-text{
+
+        h1{
+            font-size: 35px;
+        }
+        p{
+            font-size: 11px;
+        }
+
+        .btn{
+            padding: 4px;
+            font-size: 12px;
+        }
+    }
+    
+
+}
+
+@media(max-width: 991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .tips-container .tipsabout {
+         
+        .text{
+            h1{
+                font-size: 20px;
+            }
+        }
+     
+        .logo{
+            img{
+                width: 25px;
+            }
+        }
+    };
+    .tips-container .tricks .main-text{
+
+        h1{
+            font-size: 35px;
+        }
+        p{
+            font-size: 11px;
+        }
+
+        .btn{
+            padding: 4px;
+            font-size: 12px;
+        }
+    }
+    
+
+}
+@media(max-width: 768px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .tips-container .tricks .main-text{
+        
+        left: 5px;
+        position: relative;
+        h1{
+            font-size: 42px;
+        }
+
+        p{
+           font-size: 12px;;
+        }
+
+        .btn{
+            padding: 6px;
+            font-size: 17px;
+        }
+    }
+
+    .tips-container .tricks {
+        display: block;
+    }
+
+    
+
+}
+
+
+
+@media(max-width: 450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    
+    .home-container .homes .main-text{
+
+        h1{
+     
+            color: #26FFDF;
+            font-size: 2.7rem;
+        }
+        p{
+            font-size: 2.5rem;
+            color: #26FFDF;
+        }
+        .text{
+            font-size: 1rem;
+        }
+
+    }
+
+    .tips-container .tipsabout .text{
+
+        h1{
+          font-size: 12px;
+        }
+    }
+
+    .tips-container .tipsabout .logo{
+            img{
+             width: 25px;
+            }
+        
+    }
+
+    .tips-container .tricks .main-text{
+
+        h1{
+            font-size: 25px;
+        }
+
+        p{
+            font-size: 12px;
+        }
+
+
+    }
+}
